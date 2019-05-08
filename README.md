@@ -11,13 +11,18 @@ It is app to note down all trades with we have done with friends ..It is like ac
 <table>
   <tr>
  <td><img height="500" width="500" src="https://images-na.ssl-images-amazon.com/images/I/71bNMuDt%2B7L._SX600_.png" /><br /><center><b>Home Screen</b></center></td>
-
+   <td><img height="500" width="500" src="https://images-na.ssl-images-amazon.com/images/I/61PSL4BbgFL._SX600_.png" /><br /><center><b>Add Hisab Screen</b></center></td>
+    
+</tr><tr>
+  
  <td><img height="500" width="500" src="https://images-na.ssl-images-amazon.com/images/I/71RIngJO86L._SX600_.png" /><br /><center><b>History screen</b></center></td>
     
     
     
     
  <td><img height="500" width="500" src="https://github.com/Mayanktimbal/Hisab/blob/master/Screenshot_20190423-104603.png?raw=true" /><br /><center><b>Share Screen</b></center></td>
+ 
+ 
     
     
     

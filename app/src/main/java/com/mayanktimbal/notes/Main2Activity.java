@@ -191,14 +191,15 @@ if(!lev.getText().toString().isEmpty()) {
 
 
 
+
             String Entrydate=new SimpleDateFormat("dd-MM-yyyy",Locale.getDefault()).format(new Date());
 
             String comment= com.getText().toString();
-            String time = new SimpleDateFormat("hh:mm", Locale.getDefault()).format(new Date());
+            String time = new SimpleDateFormat("hh:mm a", Locale.getDefault()).format(new Date());
 boolean Append;
             path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/";
-root = new File(path+"/notes/log/"+special);
-         File   dir= new File(path+"/notes/log");
+root = new File(path+"/notes/historydata/"+special); // logfile path
+         File   dir= new File(path+"/notes/historydata");  // logfiles patrh
             if(!dir.exists() )
             {
                dir.mkdirs();
@@ -217,17 +218,17 @@ root = new File(path+"/notes/log/"+special);
             }
 
 
-                FileWriter writer = new FileWriter(path + "/notes/log/" + name, Append);
+                FileWriter writer = new FileWriter(path + "/notes/historydata/" + name, Append);
                 writer.append(category + ": " + rupee + " for " + comment + " at " + Entrydate + " " + time + " then total is " + total + "\n");
                 writer.close();
-
+            com.setText("");
 
         }
     }
 
     public void history(View view) {
         path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/";
-       root = new File(path+"notes/log/"+ special);
+       root = new File(path+"notes/historydata/"+ special);    // logfile             pathj
 
         if(!root.exists())
         {
